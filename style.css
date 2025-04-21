@@ -8,8 +8,8 @@
   .all {
     margin-left: 250px;
     margin-right: 250px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
   
   h1 {
@@ -18,9 +18,6 @@
     justify-content: center;
     color: rgb(255, 0, 245);
   }
-    
-   
-    
     
   
   .description {
@@ -36,8 +33,9 @@
   .submit button 
   {display: flex;
   justify-content: center;
-  background-color: yellow;
-    color: black;}
+  background-color: magenta;
+    color: white;
+  font-size: 18px}
   
   #result {
     display: flex;
@@ -46,3 +44,62 @@
     font-size: 20px;
     color: rgb(0, 255, 224)
   }
+  #bigbanner {width: 100vw;}
+  
+  #photoone {
+    position: absolute;
+    top: 650px;
+  left: 30px;
+    width: 200px;
+  
+  }
+  
+  #phototwo {
+    position: absolute;
+    top: 650px;
+    right: 30px;
+    width: 200px;
+  }
+  
+    #photothree {
+    position: absolute;
+    top: 300px;
+    right: 70px;
+      width: 150px;}
+  
+    #photofour {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+      width: 150px;}
+  
+  #lastbanner {
+    width: 100vw;
+    height: 20px;
+   
+  }
+  
+  #form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #codetype {font-size: 18px;}
+  
+  #formbutton {position: absolute;
+    justify-content: center;
+    margin-left: 65px;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+  
+  #secondpagelink {
+    display: flex;
+    justify-content: center;
+    font-family: impact;
+    font-size: 20px;
+    color: rgb(255, 0, 224)
+  }
+  
+  
