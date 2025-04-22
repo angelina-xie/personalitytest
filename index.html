@@ -1,4 +1,4 @@
-<br><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,103 +8,84 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img id=bigbanner src="https://web.archive.org/web/20091027124327im_/http://www.geocities.com/eyes_wide_open_01/ln_a_bluelite.gif">
-  <div class=all>
-   
-  <h1>Personality Test</h1>
-  <div class="body">
-  <div class="description">
-  
-    <p>The first step is to take this short quiz which will reveal a 5-letter code that represents your personality.
-      This is a simplified person of the Global 5 Test. If you feel your results are inaccurate, <a target ="_blank" href="https://similarminds.com/big-five-test.html"> click here</a> for a more thorough examination.</p>
+  <img id="bigbanner" src="https://web.archive.org/web/20091027124327im_/http://www.geocities.com/eyes_wide_open_01/ln_a_bluelite.gif">
+  <div class="all">
+    <h1>Personality Test</h1>
+    <div class="body">
+      <div class="description">
+        <p>The first step is to take this short quiz which will reveal a 5-letter code that represents your personality.
+          This is a simplified person of the Global 5 Test. If you feel your results are inaccurate, <a target="_blank" href="https://similarminds.com/big-five-test.html">click here</a> for a more thorough examination.</p>
       </div>
-      <div class="brain">
-      <img src="https://web.archive.org/web/20091027060552/http://geocities.com/sadistico/link6psychology/img2.gif"><img src="https://web.archive.org/web/20091027060552/http://geocities.com/sadistico/link6psychology/img2.gif"><img src="https://web.archive.org/web/20091027060552/http://geocities.com/sadistico/link6psychology/img2.gif">
-  </div>
-  <br>
-  <p><span style="font-size: 20px; font-family: impact;
-    justify-content: center; display: flex; color: rgb(97, 255, 0) "> Read each sentence below and determine if you agree with the statement.</span> </p>
+      <div class="quiz-content">
+        <div class="quiz">
+          <p><span style="font-size: 20px; font-family: impact; justify-content: center; display: flex; color: rgb(97, 255, 0)">Read each sentence below and determine if you agree with the statement.</span></p>
 
-  <form id="quizForm">
-    <div class="quiz">
+          <form id="quizForm">
+            <div class="question1">
+              <p>1. I am comfortable talking to new acquaintances/strangers.</p>
+              <input type="radio" id="True1" name="q1" value="True1" />
+              <label for="True1">True</label>
+              <input type="radio" id="False1" name="q1" value="False1" />
+              <label for="False1">False</label>
+            </div>
 
-      <div class="question1">
-        <p>1. I am comfortable talking to new acquaintances/strangers.</p>
-        <input type="radio" id="True1" name="q1" value="True1" />
-        <label for="True1">True</label>
-        <input type="radio" id="False1" name="q1" value="False1" />
-        <label for="False1">False</label>
+            <div class="question2">
+              <p>2. I control my emotions more than they control me.</p>
+              <input type="radio" id="True2" name="q2" value="True2" />
+              <label for="True2">True</label>
+              <input type="radio" id="False2" name="q2" value="False2" />
+              <label for="False2">False</label>
+            </div>
+
+            <div class="question3">
+              <p>3. I stay focused on my goals for long periods of time, even if I get lazy or don't feel like doing it anymore.</p>
+              <input type="radio" id="True3" name="q3" value="True3" />
+              <label for="True3">True</label>
+              <input type="radio" id="False3" name="q3" value="False3" />
+              <label for="False3">False</label>
+            </div>
+
+            <div class="question4">
+              <p>4. When working in a group, I prefer to persuade others that my ideas are worthwhile rather than wait for others to come up with a plan.</p>
+              <input type="radio" id="True4" name="q4" value="True4" />
+              <label for="True4">True</label>
+              <input type="radio" id="False4" name="q4" value="False4" />
+              <label for="False4">False</label>
+            </div>
+
+            <div class="question5">
+              <p>5. I am more interested in new ideas than sticking to the ones I know.</p>
+              <input type="radio" id="True5" name="q5" value="True5" />
+              <label for="True5">True</label>
+              <input type="radio" id="False5" name="q5" value="False5" />
+              <label for="False5">False</label>
+            </div>
+
+            <br>
+            <div class="submit">
+              <button id="sub" type="submit">Submit</button>
+            </div>
+          </form>
+
+          <p id="result"></p>
+        </div>
       </div>
-
-      <div class="question2">
-        <p>2. I control my emotions more than they control me.</p>
-        <input type="radio" id="True2" name="q2" value="True2" />
-        <label for="True2">True</label>
-        <input type="radio" id="False2" name="q2" value="False2" />
-        <label for="False2">False</label>
-      </div>
-
-      <div class="question3">
-        <p>3. I stay focused on my goals for long periods of time, even if I get lazy or don't feel like doing it anymore.</p>
-        <input type="radio" id="True3" name="q3" value="True3" />
-        <label for="True3">True</label>
-        <input type="radio" id="False3" name="q3" value="False3" />
-        <label for="False3">False</label>
-      </div>
-
-      <div class="question4">
-        <p>4. When working in a group, I prefer to persuade others that my ideas are worthwhile rather than wait for others to come up with a plan.</p>
-        <input type="radio" id="True4" name="q4" value="True4" />
-        <label for="True4">True</label>
-        <input type="radio" id="False4" name="q4" value="False4" />
-        <label for="False4">False</label>
-      </div>
-
-      <div class="question5">
-        <p>5. I am more interested in new ideas than sticking to the ones I know.</p>
-        <input type="radio" id="True5" name="q5" value="True5" />
-        <label for="True5">True</label>
-        <input type="radio" id="False5" name="q5" value="False5" />
-        <label for="False5">False</label>
-      </div>
-
-      <br>
-      <div class="submit">
-        <button id=sub type="submit">Submit</button>
-      </div>
-
     </div>
-  </form>
+    <div class="p">
+      <p id="secondpagelink">Enter your code below to reveal your personality traits.</p>
 
-  <p id="result"></p> 
-</div>
-<div class="p">
- 
-  <img id=photoone src="https://web.archive.org/web/20091024001733im_/http://geocities.com/area51/shire/6843/parafast.gif">
-  
-  <img id=phototwo src="https://web.archive.org/web/20091024001733im_/http://geocities.com/area51/shire/6843/parafast.gif">
-  
-  <img id=photothree src="https://web.archive.org/web/20091025211822im_/http://geocities.com/manifest_evil/brain.gif">
-  
-   <img id=photofour src="https://web.archive.org/web/20091025211822im_/http://geocities.com/manifest_evil/brain.gif">
-  
-  <p id=secondpagelink>Enter your code below to reveal your personality traits.</p>
-  
-<form id=form onsubmit="redirectToPage(event)">
-
+      <form id="form" onsubmit="redirectToPage(event)">
         <div class="submit">
           <label for="codeform"></label>
           <input type="text" id="codetype" name="codeform" />
-          <button id=formbutton type="submit">Submit</button> 
+          <button id="formbutton" type="submit">Submit</button>
         </div>
       </form>
-</div> 
-  
-</div>
-  <br>
-  <br>
-  <br>
-<img id=lastbanner src="https://web.archive.org/web/20091024171720im_/http://geocities.com/Yosemite/Meadows/1968/images/graphics/rainln.gif">
+    </div>
+  </div>
+
+  <br><br><br>
+  <img id="lastbanner" src="https://web.archive.org/web/20091024171720im_/http://geocities.com/Yosemite/Meadows/1968/images/graphics/rainln.gif">
   <script src="script.js"></script>
 </body>
 </html>
