@@ -27,18 +27,25 @@ function generateCode(event) {
 
 function redirectToPage(event) {
     event.preventDefault();  
-    const code = document.getElementById('codetype').value.trim().toLowerCase();  
+    const code = document.getElementById('codetype').value.trim().toUpperCase();  
 
     const redirectMap = {
-      'rcoai': 'rcoai.html', 'rcoan': 'rcoan.html', 'rloan': 'rloan.html', 'rloai': 'rloai.html', 'rluai': 'rluai.html',
-      'rluan': 'rluan.html', 'rcuan': 'rcuan.html', 'rcuai': 'rcuai.html', 'rcoei': 'rcoei.html', 'rcoen': 'rcoen.html',
-      'rloen': 'rloen.html', 'rloei': 'rloei.html', 'rluei': 'rluei.html', 'rluen': 'rluen.html', 'rcuen': 'rcuen.html',
-      'rcuei': 'rcuei.html'
+      
+      'RCOAI': 'rcoai.html', 'RCOAN': 'rcoan.html', 'RLOAN': 'rloan.html', 'RLOAI': 'rloai.html', 
+      'RLUAI': 'rluai.html', 'RLUAN': 'rluan.html', 'RCUAN': 'rcuan.html', 'RCUAI': 'rcuai.html', 
+      'RCOEI': 'rcoei.html', 'RCOEN': 'rcoen.html', 'RLOEN': 'rloen.html', 'RLOEI': 'rloei.html', 
+      'RLUEI': 'rluei.html', 'RLUEN': 'rluen.html', 'RCUEN': 'rcuen.html', 'RCUEI': 'rcuei.html',
+      
+   
+      'SCOAI': 'scoai.html', 'SCOAN': 'scoan.html', 'SLOAN': 'sloan.html', 'SLOAI': 'sloai.html',
+      'SLUAI': 'sluai.html', 'SLUAN': 'sluan.html', 'SCUAN': 'scuan.html', 'SCUAI': 'scuai.html',
+      'SCOEI': 'scoei.html', 'SCOEN': 'scoen.html', 'SLOEN': 'sloen.html', 'SLOEI': 'sloei.html',
+      'SLUEI': 'sluei.html', 'SLUEN': 'sluen.html', 'SCUEN': 'scuen.html', 'SCUEI': 'scuei.html'
     };
   
     if (redirectMap[code]) {
       window.location.href = redirectMap[code];
     } else {
-      alert("Invalid code. Maybe you mistyped?");
+      alert("Invalid code. Maybe you mistyped? Try again!");
     }
 }
