@@ -19,18 +19,40 @@
     color: rgb(255, 0, 245);
   }
   
+  .body {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .side-images {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+  
+  .side-images.left {
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+  
+  .side-images.right {
+    align-items: flex-end;
+    margin-left: 20px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    max-width: 800px;
+  }
+  
   .description {
     font-size: 18px;
     font-style: italic;
   }
   
-  .quiz-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .quiz {
-    flex: 1;
+  .brain {
+    display: flex; 
+    justify-content: center;
   }
   
   .submit button {
@@ -46,45 +68,21 @@
     justify-content: center;
     font-family: impact;
     font-size: 20px;
-    color: rgb(0, 255, 224)
+    color: rgb(0, 255, 224);
   }
   
   #bigbanner {
     width: 100vw;
   }
   
-  .p {
-    display: flex;
-    justify-content: center;
+  #photoone, #phototwo {
+    width: 200px;
+    margin: 10px 0;
   }
   
-  #photoone, #phototwo, #photothree, #photofour {
+  #photothree, #photofour {
     width: 150px;
-    margin: 10px;
-  }
-  
-  #photoone {
-    position: relative;
-    top: 10px;
-    left: -220px;
-  }
-  
-  #phototwo {
-    position: relative;
-    top: 10px;
-    right: -220px;
-  }
-  
-  #photothree {
-    position: relative;
-    top: 70px;
-    right: -300px;
-  }
-  
-  #photofour {
-    position: relative;
-    top: 70px;
-    left: -300px;
+    margin: 10px 0;
   }
   
   #lastbanner {
@@ -102,7 +100,6 @@
   }
   
   #formbutton {
-    position: absolute;
     justify-content: center;
     margin-left: 65px;
     margin-bottom: 50px;
@@ -115,6 +112,5 @@
     justify-content: center;
     font-family: impact;
     font-size: 20px;
-    color: rgb(0, 255, 224)
+    color: rgb(0, 255, 224);
   }
-  
