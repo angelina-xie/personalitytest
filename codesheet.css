@@ -25,7 +25,7 @@
     color: magenta;
     z-index: 2;
     background-color: rgb(0,255,255);
-    font-family: 'Comic Sans MS';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-right: 200px;
     padding-left: 200px;
       
@@ -60,7 +60,7 @@
     background-color: rgb(0,255,255);
     padding: 10px 20px;
     border-radius: 5px;
-    font-family: 'Comic Sans MS';
+    font-family: impact;
     transition: all 0.3s ease;
   }
   
