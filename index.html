@@ -11,69 +11,82 @@
       font-style: light;
       background-color: black;
       color: white;
+      box-sizing: border-box;
     }
-    
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
     .all {
-      margin-left: 250px;
-      margin-right: 250px;
-      margin-top: 0px;
-      margin-bottom: 20px;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 900px;
     }
-    
+
     h1 {
-     background-color: yellow;
+      background-color: yellow;
       display: flex;
       justify-content: center;
       color: rgb(255, 0, 245);
       font-size: 40px;
     }
-    
+
     .content-wrapper {
       display: flex;
+      flex-wrap: wrap;
       position: relative;
     }
-    
+
     .side-images {
       position: absolute;
       top: 0;
       width: 150px;
     }
-    
+
     .left-images {
       left: -180px;
     }
-    
+
     .right-images {
       right: -180px;
     }
-    
+
     .side-images img {
       display: block;
       margin-bottom: 20px;
+      max-width: 100%;
+      height: auto;
     }
-    
+
     .main-content {
       width: 100%;
     }
-    
+
     .description {
       font-size: 18px;
       font-style: italic;
     }
-    
+
     .brain {
-      display: flex; 
+      display: flex;
       justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
     }
-    
+
     .submit button {
       display: flex;
       justify-content: center;
       background-color: magenta;
       color: white;
       font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
     }
-    
+
     #result {
       display: flex;
       justify-content: center;
@@ -82,36 +95,40 @@
       background-color: yellow;
       color: rgb(255, 0, 255);
     }
-    
-    #fire {
-      width: 100vw;
-    }
-    #bigbanner {
-      width: 100vw;
-    }
-    
+
+    #fire,
+    #bigbanner,
     #lastbanner {
-      width: 100vw;
+      width: 100%;
+    }
+
+    #lastbanner {
       height: 20px;
     }
-    
+
     #form {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
-    
+
     #codetype {
       font-size: 18px;
+      padding: 5px;
     }
-    
+
     #formbutton {
-      justify-content: center;
-      margin-left: 65px;
-      margin-bottom: 50px;
-      margin-top: 5px;
+      margin-top: 10px;
       margin-bottom: 40px;
+      padding: 10px 20px;
+      background-color: magenta;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
     }
-    
+
     #secondpagelink {
       display: flex;
       justify-content: center;
@@ -121,21 +138,69 @@
       background-color: yellow;
       margin: 3px;
     }
+
+    .quiz div {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .all {
+        margin: 0 10px;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .side-images {
+        display: none;
+      }
+
+      .brain img {
+        width: 80px;
+        height: auto;
+      }
+
+      .submit button, #formbutton {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      #codetype {
+        width: 100%;
+        max-width: 200px;
+      }
+
+      #secondpagelink {
+        font-size: 18px;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+
+      #result {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <img id="bigbanner" src="https://web.archive.org/web/20091027124327im_/http://www.geocities.com/eyes_wide_open_01/ln_a_bluelite.gif">
   <div class="all">
     <h1>Personality Test</h1>
-    
+
     <div class="content-wrapper">
- 
       <div class="side-images left-images">
         <img id="photofour" src="https://web.archive.org/web/20091025211822im_/http://geocities.com/manifest_evil/brain.gif">
-        
       </div>
-      
-     
+
       <div class="main-content">
         <div class="description">
           <p>The first step is to take this short quiz which will reveal a 5-letter code that represents your personality.
@@ -147,7 +212,7 @@
           <img src="https://web.archive.org/web/20091027060552/http://geocities.com/sadistico/link6psychology/img2.gif">
         </div>
         <br>
-       
+
         <p><span style="font-size: 20px; font-family: timesnewroman; margin: 3px; justify-content: center; display: flex; color: rgb(251, 0, 255); background-color: yellow"> Read each sentence below and determine if you agree with the statement.</span></p>
 
         <form id="quizForm">
@@ -201,17 +266,15 @@
 
         <p id="result"></p>
       </div>
-      
 
       <div class="side-images right-images">
         <img id="photothree" src="https://web.archive.org/web/20091025211822im_/http://geocities.com/manifest_evil/brain.gif">
-       
       </div>
     </div>
-    
+
     <div class="p">
       <p id="secondpagelink">Enter your code below to reveal your personality traits.</p>
-      
+
       <form id="form" onsubmit="redirectToPage(event)">
         <div class="submit">
           <label for="codeform"></label>
@@ -221,14 +284,11 @@
       </form>
     </div>
   </div>
-  
-  <br><br><br>
- 
-  
 
-    
-    <p><span style="display: flex; justify-content: center">© 1999-2005 AngelinasEPICquiz.com | <a href="https://angelinaxie.my.canva.site/">See my other work</a></span></p>
-    <img id=fire src="https://web.archive.org/web/20090726183900im_/http://mx.geocities.com/wardeathcommandos/FLAMES20.gif">
+  <br><br><br>
+
+  <p><span style="display: flex; justify-content: center">© 1999-2005 AngelinasEPICquiz.com | <a href="https://angelinaxie.my.canva.site/">See my other work</a></span></p>
+  <img id="fire" src="https://web.archive.org/web/20090726183900im_/http://mx.geocities.com/wardeathcommandos/FLAMES20.gif">
   <script src="script.js"></script>
 </body>
 </html>
